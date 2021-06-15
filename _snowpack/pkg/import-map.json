@@ -5,6 +5,7 @@
     "reveal.js/dist/theme/beige.css": "./revealjs/dist/theme/beige.css",
     "reveal.js/plugin/highlight/highlight.esm.js": "./revealjs/plugin/highlight/highlight.esm.js",
     "reveal.js/plugin/highlight/zenburn.css": "./revealjs/plugin/highlight/zenburn.css",
-    "reveal.js/plugin/markdown/markdown.esm.js": "./revealjs/plugin/markdown/markdown.esm.js"
+    "reveal.js/plugin/markdown/markdown.esm.js": "./revealjs/plugin/markdown/markdown.esm.js",
+    "reveal.js/plugin/zoom/zoom.esm.js": "./revealjs/plugin/zoom/zoom.esm.js"
   }
 }
