@@ -18,7 +18,7 @@ En su variante más simple, pediremos usuario y contraseña, para luego validar 
 
 --
 
-## Autorización
+### Autorización
 
 Una vez que validamos que la persona **es quien dice ser**, nuestro sistema tiene que decidir qué puede hacer.
 
@@ -97,22 +97,21 @@ Esta misma tarea con bcrypt usando un factor de carga de 12, tomaría aproximada
 
 ===
 
-## JSON Web Tokens
+## JSON Web Tokens (JWT)
 
 Sirve como una especie de **llave descartable** que utilizamos para hacer pedidos autorizados a la API.
 
-Se le configura un **secreto** y un **tiempo de expiración**.
 
 --
 
-https://livecodestream.dev/post/a-practical-guide-to-jwt-authentication-with-nodejs/
+Se le configura un **secreto** y un **tiempo de expiración**.
 
 ```js
 const SECRET = 'P1rul0!';
 const DURACION_SEGUNDOS = 120;
 
 jwt.sign(
-  { id: 4, nombre: 'Federico Aloi'}, 
+  { id: 4, nombre: 'Federico Aloi' }, 
   SECRET, 
   { expiresIn: DURACION_SEGUNDOS }
 )
@@ -136,6 +135,12 @@ jwt.verify(token, SECRET)
 // { name: 'TokenExpiredError', message: 'jwt expired', 
 // expiredAt: 1408621000 }
 ```
+
+===
+
+## ¡Manos a la obra! 🦾
+
+<small>[machete](https://livecodestream.dev/post/a-practical-guide-to-jwt-authentication-with-nodejs/)</small>
 
 ===
 
