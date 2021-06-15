@@ -97,21 +97,24 @@ Esta misma tarea con bcrypt usando un factor de carga de 12, tomaría aproximada
 
 ===
 
-## JWT
+## JSON Web Tokens
 
-Sirve para...
-Tiempo de expiración
+Sirve como una especie de **llave descartable** que utilizamos para hacer pedidos autorizados a la API.
+
+Se le configura un **secreto** y un **tiempo de expiración**.
+
+--
 
 https://livecodestream.dev/post/a-practical-guide-to-jwt-authentication-with-nodejs/
 
 ```js
-const SECRET = 'P1rul0!'
-const VENCIMIENTO = 120;
+const SECRET = 'P1rul0!';
+const DURACION_SEGUNDOS = 120;
 
 jwt.sign(
   { id: 4, nombre: 'Federico Aloi'}, 
   SECRET, 
-  { expiresIn: VENCIMIENTO }
+  { expiresIn: DURACION_SEGUNDOS }
 )
 
 // eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
@@ -138,9 +141,8 @@ jwt.verify(token, SECRET)
 
 ## Otros caminos posibles
 
-Login sociales -> passportjs
-Servicios en la nube -> https://auth0.com/
-
+* **Login sociales:** Passportjs
+* **Servicios en la nube:** https://auth0.com/
 
 ===
 # ¿Preguntas?
