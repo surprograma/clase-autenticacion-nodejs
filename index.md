@@ -138,18 +138,19 @@ jwt.verify(token, SECRET)
 
 ===
 
-## ¡Manos a la obra! 🦾
+## 🦾 ¡Manos a la obra!
 
-<small>[machete](https://livecodestream.dev/post/a-practical-guide-to-jwt-authentication-with-nodejs/)</small>
+🗒️ [Machete](https://livecodestream.dev/post/a-practical-guide-to-jwt-authentication-with-nodejs/)
 
 ===
 
 ## Otros caminos posibles
 
-* **Login sociales:** Passportjs
+* **Login sociales:** PassportJS
 * **Servicios en la nube:** https://auth0.com/
 
 ===
+
 # ¿Preguntas?
 
 <div class="red-social">
